@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: arial;
+  background-color: #d6d3db;
+  color: #3b0a45;
+}
+
+nav {
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
+}
+
+nav div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav div a {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s;
+}
+
+nav div a:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.contact-box h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #3b0a45;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-column {
+  flex: 1;
+  margin: 15px;
+  min-width: 180px;
+}
+
+.contact-column h2 {
+  margin-bottom: 12px;
+  font-size: 1.2em;
+  color: #3b0a45;
+}
+
+.contact-column img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.contact-column a {
+  display: block;
+  color: #5b2a6d;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.contact-column a.email-link {
+  color: #7b3f8c;
+}
+
+.contact-column a[href*="linkedin"] {
+  color: black;
+}
+
+.contact-column a:hover {
+  text-decoration: underline;
+}
+
+.form-section {
+  margin-top: 40px;
+}
+
+.form-section h2 {
+  color: #3b0a45;
+  margin-bottom: 15px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: arial;
+  font-size: 1em;
+  color: #3b0a45;
+}
+
+.form-section textarea {
+  resize: vertical;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  outline: none;
+  border-color: #5b2a6d;
+  box-shadow: 0 0 5px rgba(91,42,109,0.3);
+}
+
+.form-section button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  border: none;
+  background-color: #5b2a6d;
+  color: white;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-section button:hover {
+  background-color: #7b3f8c;
+  transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <a href="coverpage.html">Home</a>
+    <a href="about.html">Who are we?</a>
+    <a href="home.html">Our Homebase</a>
+    <a href="bella.html">Bella's Boarding</a>
+    <a href="aidan.html">Aidan's Adventures</a>
+    <a href="declan.html">Declan's Discoveries</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="contact-box">
+  <h1>Get in touch!</h1>
+
+  <div class="contact-row">
+    <div class="contact-column">
+      <h2>Aidan Krush</h2>
+      <img src="Project Images/aidan.jpg" alt="Aidan Krush Photo">
+      <a href="mailto:aidan.krush@ucdconnect.ie" class="email-link">aidan.krush@ucdconnect.ie</a>
+      <a href="https://www.linkedin.com/in/aidankrush" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="contact-column">
+      <h2>Bella O'Brien</h2>
+      <img src="Project Images/bella.jpg" alt="Bella O'Brien Photo">
+      <a href="mailto:bella.obrien@ucdconnect.ie" class="email-link">bella.obrien@ucdconnect.ie</a>
+      <a href="https://www.linkedin.com/in/bellaobrien" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="contact-column">
+      <h2>Declan Murphy</h2>
+      <img src="Project Images/declan.jpg" alt="Declan Murphy Photo">
+      <a href="mailto:declan.murphy3@ucdconnect.ie" class="email-link">declan.murphy3@ucdconnect.ie</a>
+      <a href="https://www.linkedin.com/in/declanmurphy" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Send us a message</h2>
+
+    <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

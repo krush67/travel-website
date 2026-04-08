@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Are We?</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fffbea;
+      color: #333;
+      text-align: center;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 10;
+    }
+
+    nav div {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav div a {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      color: black;
+      transition: background 0.3s;
+    }
+
+    nav div a:hover {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      color: #8a6a00;
+      font-size: 42px;
+    }
+
+    h2 {
+      color: #a88400;
+      margin-top: 10px;
+    }
+
+    h3 {
+      color: #b8950a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      width: 80%;
+      margin: 0 auto 20px auto;
+      line-height: 1.7;
+      color: #5f4a00;
+    }
+
+    .hero {
+      padding: 20px 20px 10px;
+    }
+
+    .mission-section {
+      width: 85%;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .team-section {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .member-card {
+      background-color: white;
+      width: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .member-photo {
+      width: 100%;
+      height: 280px;
+      background-color: #f6e8a8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8a6a00;
+      font-size: 18px;
+      font-weight: bold;
+      object-fit: cover;
+    }
+
+    .member-info {
+      padding: 20px;
+    }
+
+    .member-info h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .member-info ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 15px 0;
+    }
+
+    .member-info li {
+      margin-bottom: 10px;
+      color: #5f4a00;
+      line-height: 1.5;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #8a6a00;
+    }
+
+    .bio {
+      margin-top: 15px;
+      color: #5f4a00;
+      line-height: 1.6;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #e2d48c;
+      width: 85%;
+      margin: 40px auto;
+    }
+
+    @media (max-width: 900px) {
+      .member-card {
+        width: 90%;
+        max-width: 400px;
+      }
+
+      p,
+      .mission-section {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>
+      <a href="coverpage.html">Home</a>
+      <a href="about.html">Who are we?</a>
+      <a href="home.html">Our Homebase</a>
+      <a href="bella.html">Bella's Boarding</a>
+      <a href="aidan.html">Aidan's Adventures</a>
+      <a href="declan.html">Declan's Discoveries</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Who Are We?</h1>
+    <p>
+      We are three students with a shared love for travel, storytelling, and discovering what makes each place unique. This website is a collection of our experiences, favorite destinations, and personal recommendations from the places we have explored.
+    </p>
+  </div>
+
+  <div class="mission-section">
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to share honest travel experiences in a way that feels personal, helpful, and inspiring. We want to create a space where people can learn more about destinations through real stories, favorite memories, and practical advice. Whether it is finding the best food, the right neighborhood to stay in, or a hidden gem worth visiting, our goal is to make travel feel more exciting, approachable, and meaningful.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="team-section">
+    <h2>Meet the Team</h2>
+
+    <div class="team-grid">
+      <div class="member-card">
+        <div class="member-photo"><img class="member-photo" src="Project images/fundeclan.HEIC" alt="Declan"></div>
+        <div class="member-info">
+          <h3>Declan</h3>
+          <ul>
+            <li><span class="label">Hometown:</span> Providence, Rhode Island, United States of America</li>
+            <li><span class="label">Age:</span> 21</li>
+            <li><span class="label">Hobbies:</span> Golf, weightlifting, and cooking</li>
+            <li><span class="label">Education:</span> Indiana University</li>
+            <li><span class="label">Fun Fact:</span> I have caddied for three PGA proffesionals</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo"><img class="member-photo" src="Project images/funbella.HEIC" alt="Bella"></div>
+        <div class="member-info">
+          <h3>Bella</h3>
+          <ul>
+            <li><span class="label">Hometown:</span> Scituate, Rhode Island, United States of America</li>
+            <li><span class="label">Age:</span> 21</li>
+            <li><span class="label">Hobbies:</span> Yoga, EDM music, and foodie</li>
+            <li><span class="label">Educaton:</span> Boston University</li>
+            <li><span class="label">Fun Fact:</span> I have a pet bunny</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo"><img class="member-photo" src="Project images/london-1.jpg" alt="Aidan"></div>
+        <div class="member-info">
+          <h3>Aidan</h3>
+          <ul>
+            <li><span class="label">Hometown:</span> Edina, Minnesota, United States of America</li>
+            <li><span class="label">Age:</span> 20</li>
+            <li><span class="label">Hobbies:</span> Creative writing, equestrian, and shoe shining</li>
+            <li><span class="label">Education:</span> Boston College</li>
+            <li><span class="label">Fun Fact:</span> I'm related to Adam Sandler through cousins</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
